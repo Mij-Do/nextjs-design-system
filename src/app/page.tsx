@@ -8,11 +8,11 @@ export default function Home() {
           Design System Basics
         </h1>
         <div className="border-white border rounded-lg p-2 flex flex-col items-center gap-5">
-          <Button intent={"primary"}>SOLID</Button>
-          <Button intent={"destructive"}>DESTRUCTIVE</Button>
-          <Button intent={"secondary"}>SECONDARY</Button>
-          <Button intent={"outline"}>OUTLINE</Button>
-          <Button intent={"ghost"}>GHOST</Button>
+          <Button intent={"primary"} size={"xs"}>SOLID</Button>
+          <Button intent={"destructive"} size={"sm"}>DESTRUCTIVE</Button>
+          <Button intent={"secondary"} size={"md"}>SECONDARY</Button>
+          <Button intent={"outline"} size={"lg"}>OUTLINE</Button>
+          <Button intent={"ghost"} size={"xl"}>GHOST</Button>
           <Button intent={"link"}>LINK</Button>
         </div>
     </div>
