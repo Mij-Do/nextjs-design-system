@@ -17,11 +17,17 @@ const buttonVariants = cva("rounded-lg font-semibold duration-200", {
             link: "bg-transparent text-black hover:border-b hover:border-gray-500 dark:text-white ",
         },
         size: {
-            xs: "px-2 text-xs",
-            sm: "px-4 text-sm",
-            md: "px-6 text-md",
-            lg: "px-8 text-lg",
-            xl: "px-10 text-xl"
+            xs: "px-2 text-xs h-6",
+            sm: "px-4 text-sm h-8",
+            md: "px-6 text-md h-10",
+            lg: "px-8 text-lg h-12",
+            xl: "px-10 text-xl h-14"
+        },
+        fullWidth: {
+            true: "w-full"
+        },
+        fitWidth: {
+            true: "w-fit"
         }
     },
     defaultVariants: {
@@ -30,9 +36,9 @@ const buttonVariants = cva("rounded-lg font-semibold duration-200", {
     }
 });
 
-const Button = ({children, intent, size, ...rest}: IProps) => {
+const Button = ({children, intent, size, fullWidth, fitWidth, ...rest}: IProps) => {
     return (
-        <button className={`${tailwindMerge(buttonVariants({intent, size}))}`} {...rest}>
+        <button className={`${tailwindMerge(buttonVariants({intent, size, fullWidth, fitWidth}))}`} {...rest}>
             {children}
         </button>
     )

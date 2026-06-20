@@ -11,8 +11,8 @@ export default function Home() {
           <Button intent={"primary"} size={"xs"}>SOLID</Button>
           <Button intent={"destructive"} size={"sm"}>DESTRUCTIVE</Button>
           <Button intent={"secondary"} size={"md"}>SECONDARY</Button>
-          <Button intent={"outline"} size={"lg"}>OUTLINE</Button>
-          <Button intent={"ghost"} size={"xl"}>GHOST</Button>
+          <Button intent={"outline"} size={"lg"} fitWidth>OUTLINE</Button>
+          <Button intent={"ghost"} size={"xl"} fullWidth>GHOST</Button>
           <Button intent={"link"}>LINK</Button>
         </div>
     </div>
