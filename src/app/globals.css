@@ -3,8 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  margin: 0;
-  padding: 0;
+}
+
+@theme {
+  --primary: "#0a0a0a";
 }
 
 @theme inline {
