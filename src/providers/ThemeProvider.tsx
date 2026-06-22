@@ -1,14 +1,11 @@
 "use client";
 
 import { ReactNode } from 'react';
-import { ThemeProvider as NexThemeProvider } from 'next-themes';
+import { ThemeProvider as NexThemeProvider, type ThemeProviderProps } from 'next-themes';
 
 
-interface IProps {
-    children: ReactNode;
-}
 
-const ThemeProvider = ({children, ...props}: IProps) => {
+const ThemeProvider = ({children, ...props}: ThemeProviderProps) => {
     return (
         <NexThemeProvider {...props}>
             {children}

@@ -1,4 +1,5 @@
 import Button from "@/app/components/ui/Button";
+import ThemeChanger from "./components/ThemeChanger";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
         <h1 className="bg-white px-3 py-3 w-fit rounded-lg mx-auto text-black text-5xl mt-2">
           Design System Basics
         </h1>
+        <ThemeChanger />
         <div className="border-white border rounded-lg p-2 flex flex-col items-center gap-5">
           <Button intent={"primary"} size={"xs"}>SOLID</Button>
           <Button intent={"destructive"} size={"sm"}>DESTRUCTIVE</Button>
